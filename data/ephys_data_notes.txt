@@ -1,0 +1,35 @@
+ephys file:
+
+data:
+    time_dir_name
+    neuron_name
+    monitor_data
+    synapse_data
+    synapse_mapping
+    stimulus
+    spike_times_ms
+    missing_in_this_dir
+    run_time_info
+
+
+[data.synapse_data]
+[{'neuron_name': '864691134884743930_0',
+  'syn_comps': [(0, (609.281597975334, 947.685780893643, 795.612131940887))]
+
+[data.synapse_mapping]
+{'pre': '864691136912016113_0',
+  'post': '864691135337676518_0',
+  'pre_idx': 235,
+  'post_idx': 41,
+  'pre_comp_indices': [np.int64(1346)],
+  'post_comp_indices': [np.int64(556)]},
+
+
+[data.monitor_data]
+list of dictionaries (238, probably corresponding to seg ids) with keys:
+    neuron_name
+    t_ms
+    record_indices
+    variables
+
+[data.monitor_data[idx].variables.v] = the voltage traces
