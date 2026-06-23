@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "ephys_analysis_tools"
+version = "0.1.0"
+
+description = "code for analysis electrophysiology data (generated from simulations over compartmentalized neuron morphology) to inspect network properties and compare/contrast different network properties as ephys profiles change"
+
+
+authors = [
+    {name = "Brendan Celii"}
+]
+readme = "README.md"
+
+keywords = ["ephys", "electrophysiology", "connectivity", "networkx", "neuroscience"]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+requires-python=">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "networkx>=3.2",
+    "matplotlib>=3.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/bacelii/ephys_analysis_tools"
+Issues = "https://github.com/bacelii/ephys_analysis_tools/issues"
+
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+    "ipykernel>=6.0",
+    "jupyter>=1.0",
+]
+
+#tool setup
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ephys_analysis_tools*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"

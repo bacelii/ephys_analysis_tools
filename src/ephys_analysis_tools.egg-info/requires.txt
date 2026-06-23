@@ -1,0 +1,10 @@
+numpy>=1.26
+scipy>=1.11
+networkx>=3.2
+matplotlib>=3.8
+
+[dev]
+pytest>=8.0
+ruff>=0.5
+ipykernel>=6.0
+jupyter>=1.0

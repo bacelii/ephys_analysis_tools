@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/ephys_analysis_tools/__init__.py
+src/ephys_analysis_tools.egg-info/PKG-INFO
+src/ephys_analysis_tools.egg-info/SOURCES.txt
+src/ephys_analysis_tools.egg-info/dependency_links.txt
+src/ephys_analysis_tools.egg-info/requires.txt
+src/ephys_analysis_tools.egg-info/top_level.txt

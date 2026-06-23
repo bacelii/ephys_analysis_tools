@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: ephys_analysis_tools
+Version: 0.1.0
+Summary: code for analysis electrophysiology data (generated from simulations over compartmentalized neuron morphology) to inspect network properties and compare/contrast different network properties as ephys profiles change
+Author: Brendan Celii
+Project-URL: Homepage, https://github.com/bacelii/ephys_analysis_tools
+Project-URL: Issues, https://github.com/bacelii/ephys_analysis_tools/issues
+Keywords: ephys,electrophysiology,connectivity,networkx,neuroscience
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26
+Requires-Dist: scipy>=1.11
+Requires-Dist: networkx>=3.2
+Requires-Dist: matplotlib>=3.8
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: ruff>=0.5; extra == "dev"
+Requires-Dist: ipykernel>=6.0; extra == "dev"
+Requires-Dist: jupyter>=1.0; extra == "dev"
+
+# ephys_analysis_tools
+Toolbox for analyzing neuronal electrophysiology data for network attributes
